@@ -50,7 +50,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="mt-10 flex justify-between items-center px-5 mb-2 border-2 border-x-0 border-b-0 border-t-gray-700">
+          <div className="mt-8 flex justify-between items-center px-5 mb-2 border-2 border-x-0 border-b-0 border-t-gray-700">
             <div className="flex pt-2 gap-1">
               <p className="text-sm">My Resume</p>
               <div>
