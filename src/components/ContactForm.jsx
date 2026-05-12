@@ -78,7 +78,7 @@ export default function ContactForm() {
       {/* BUTTON */}
       <button
         type="submit"
-        className="bg-sky-500 dark:bg-sky-400 hover:opacity-90 text-white font-medium rounded-lg p-3 text-sm transition cursor-pointer"
+        className="bg-[#047387] dark:bg-[#047387] hover:opacity-90 text-white font-medium rounded-lg p-3 text-sm transition cursor-pointer"
       >
         Send
       </button>
