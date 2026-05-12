@@ -13,7 +13,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="flex flex-col gap-1 pb-4 bg-gray-950 md:flex-row justify-center items-center min-h-screen py-1 ">
+    <div className="flex flex-col gap-1 pb-4 bg-gray-50 md:flex-row justify-center items-center min-h-screen py-1 ">
       <nav className="flex md:flex-col gap-1 sticky top-1">
         <button
           onClick={() => setDarkMode(!darkMode)}
@@ -112,11 +112,10 @@ function App() {
                 </span>
               </h1>
               <div className="border border-gray-700 mb-3"></div>
-              <p className="text-xs mb-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consectetur sed a perferendis placeat quia magnam possimus culpa
-                maiores, provident debitis eaque consequatur officia corrupti
-                eveniet ipsa velit.
+              <p className="text-sm mb-5">
+                Full Stack Developer building modern web applications with
+                React, Node.js, Express, and MongoDB. Focused on clean UI,
+                scalable backend systems, and smooth user experiences.
               </p>
               <h2 className="mb-1">
                 My
@@ -150,6 +149,18 @@ function App() {
                   <p>Node.js</p>
                 </div>
               </div>
+              <div className="grid mb-4 text-sm tracking-wide dark:bg-gray-900 bg-gray-300 p-3 rounded-lg gap-y-1 grid-cols-2 justify-items-start gap-x-10">
+                <p>Express.js</p>
+                <p>Redux</p>
+                <p>Redux toolkit</p>
+                <p>RTK Query</p>
+                <p>JWT Authentication</p>
+                <p>Git</p>
+                <p>Razorpay</p>
+                <p>Twilio</p>
+                <p>MongoDB</p>
+                <p>Supabase</p>
+              </div>
             </section>
             <section id="projects">
               <h2 className="mb-1">
@@ -164,25 +175,25 @@ function App() {
                   <h3 className="mb-2 font-medium tracking-wide text-sm">
                     Project 1
                   </h3>
-                  <img src="/coming soon.webp" alt="" />
+                  <img src="/Coming soon.png" alt="" />
                 </div>
                 <div className="mb-4">
                   <h3 className="mb-2 font-medium tracking-wide text-sm">
                     Project 2
                   </h3>
-                  <img src="/coming soon.webp" alt="" />
+                  <img src="/Coming soon.png" alt="" />
                 </div>
                 <div className="mb-4">
                   <h3 className="mb-2 font-medium tracking-wide text-sm">
                     Project 3
                   </h3>
-                  <img src="/coming soon.webp" alt="" />
+                  <img src="/Coming soon.png" alt="" />
                 </div>
                 <div className="mb-4">
                   <h3 className="mb-2 font-medium tracking-wide text-sm">
                     Project 4
                   </h3>
-                  <img src="/coming soon.webp" alt="" />
+                  <img src="/Coming soon.png" alt="" />
                 </div>
               </div>
             </section>
