@@ -25,18 +25,39 @@ function App() {
           ></ion-icon>
         </button>
         <div className="dark:bg-slate-800 bg-slate-200  md:flex-col md:py-4 text-[10px] text-gray-800 dark:text-gray-300 flex gap-4 items-center justify-center p-2 rounded-lg">
-          <div className="flex flex-col hover:text-sky-500 items-center justify-center cursor-pointer">
+          <div
+            onClick={() =>
+              document
+                .getElementById("about")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+            className="flex flex-col hover:text-sky-500 items-center justify-center cursor-pointer"
+          >
             <ion-icon
               className="text-xl"
               name="person-circle-outline"
             ></ion-icon>
             <p>ABOUT</p>
           </div>
-          <div className="flex flex-col hover:text-sky-500 items-center justify-center cursor-pointer">
+          <div
+            onClick={() =>
+              document
+                .getElementById("projects")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+            className="flex flex-col hover:text-sky-500 items-center justify-center cursor-pointer"
+          >
             <ion-icon className="text-xl" name="albums-outline"></ion-icon>
             <p>PROJECTS</p>
           </div>
-          <div className="flex flex-col hover:text-sky-500 items-center justify-center cursor-pointer">
+          <div
+            onClick={() =>
+              document
+                .getElementById("contact")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+            className="flex flex-col hover:text-sky-500 items-center justify-center cursor-pointer"
+          >
             <ion-icon className="text-xl" name="chatbox-outline"></ion-icon>
             <p>CONTACT</p>
           </div>
@@ -81,91 +102,100 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="dark:bg-gray-800 bg-gray-200 max-w-xs h-110  lg:max-w-md dark:text-gray-50 text-gray-800 p-3 rounded-lg">
+        <div className="dark:bg-gray-800 bg-gray-200 max-w-xs h-110  lg:max-w-md dark:text-gray-50 text-gray-800 p-3 rounded-lg">
           <div className="scrollbar h-full overflow-y-auto p-2 ">
-            <h1 className="mb-2">
-              Hey
-              <span className="ml-1 dark:text-sky-400 text-sky-700">
-                there 👋
-              </span>
-            </h1>
-            <div className="border border-gray-700 mb-3"></div>
-            <p className="text-xs mb-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consectetur sed a perferendis placeat quia magnam possimus culpa
-              maiores, provident debitis eaque consequatur officia corrupti
-              eveniet ipsa velit.
-            </p>
-            <h2 className="mb-1">
-              My
-              <span className="ml-1 dark:text-sky-400 text-sky-700">
-                Skills
-              </span>
-            </h2>
-            <div className="border border-gray-700 mb-3"></div>
-            <div className="grid grid-cols-2 lg:grid-cols-5 gap-2 text-[12px] mb-5 ">
-              <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
-                <ion-icon className="text-lg" name="logo-html5"></ion-icon>
-                <p>HTML5</p>
+            <section id="about">
+              <h1 className="mb-2">
+                Hey
+                <span className="ml-1 dark:text-sky-400 text-sky-700">
+                  there 👋
+                </span>
+              </h1>
+              <div className="border border-gray-700 mb-3"></div>
+              <p className="text-xs mb-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consectetur sed a perferendis placeat quia magnam possimus culpa
+                maiores, provident debitis eaque consequatur officia corrupti
+                eveniet ipsa velit.
+              </p>
+              <h2 className="mb-1">
+                My
+                <span className="ml-1 dark:text-sky-400 text-sky-700">
+                  Skills
+                </span>
+              </h2>
+              <div className="border border-gray-700 mb-3"></div>
+              <div className="grid grid-cols-2 lg:grid-cols-5 gap-2 text-[12px] mb-5 ">
+                <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
+                  <ion-icon className="text-lg" name="logo-html5"></ion-icon>
+                  <p>HTML5</p>
+                </div>
+                <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
+                  <ion-icon className="text-lg" name="logo-css3"></ion-icon>
+                  <p>CSS</p>
+                </div>
+                <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
+                  <ion-icon
+                    className="text-lg"
+                    name="logo-javascript"
+                  ></ion-icon>
+                  <p>JavaScript</p>
+                </div>
+                <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
+                  <ion-icon className="text-lg" name="logo-react"></ion-icon>
+                  <p>React</p>
+                </div>
+                <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
+                  <ion-icon className="text-lg" name="logo-nodejs"></ion-icon>
+                  <p>Node.js</p>
+                </div>
               </div>
-              <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
-                <ion-icon className="text-lg" name="logo-css3"></ion-icon>
-                <p>CSS</p>
+            </section>
+            <section id="projects">
+              <h2 className="mb-1">
+                My
+                <span className="ml-1 dark:text-sky-400 text-sky-700">
+                  Projects
+                </span>
+              </h2>
+              <div className="border border-gray-700 mb-3"></div>
+              <div>
+                <div className="mb-4">
+                  <h3 className="mb-2 font-medium tracking-wide text-sm">
+                    Project 1
+                  </h3>
+                  <img src="/coming soon.webp" alt="" />
+                </div>
+                <div className="mb-4">
+                  <h3 className="mb-2 font-medium tracking-wide text-sm">
+                    Project 2
+                  </h3>
+                  <img src="/coming soon.webp" alt="" />
+                </div>
+                <div className="mb-4">
+                  <h3 className="mb-2 font-medium tracking-wide text-sm">
+                    Project 3
+                  </h3>
+                  <img src="/coming soon.webp" alt="" />
+                </div>
+                <div className="mb-4">
+                  <h3 className="mb-2 font-medium tracking-wide text-sm">
+                    Project 4
+                  </h3>
+                  <img src="/coming soon.webp" alt="" />
+                </div>
               </div>
-              <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
-                <ion-icon className="text-lg" name="logo-javascript"></ion-icon>
-                <p>JavaScript</p>
-              </div>
-              <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
-                <ion-icon className="text-lg" name="logo-react"></ion-icon>
-                <p>React</p>
-              </div>
-              <div className="flex flex-col items-center justify-center dark:bg-gray-900 bg-gray-300 p-3 rounded-lg">
-                <ion-icon className="text-lg" name="logo-nodejs"></ion-icon>
-                <p>Node.js</p>
-              </div>
-            </div>
-            <h2 className="mb-1">
-              My
-              <span className="ml-1 dark:text-sky-400 text-sky-700">
-                Projects
-              </span>
-            </h2>
-            <div className="border border-gray-700 mb-3"></div>
-            <div>
-              <div className="mb-4">
-                <h3 className="mb-2 font-medium tracking-wide text-sm">
-                  Project 1
-                </h3>
-                <img src="/coming soon.webp" alt="" />
-              </div>
-              <div className="mb-4">
-                <h3 className="mb-2 font-medium tracking-wide text-sm">
-                  Project 2
-                </h3>
-                <img src="/coming soon.webp" alt="" />
-              </div>
-              <div className="mb-4">
-                <h3 className="mb-2 font-medium tracking-wide text-sm">
-                  Project 3
-                </h3>
-                <img src="/coming soon.webp" alt="" />
-              </div>
-              <div className="mb-4">
-                <h3 className="mb-2 font-medium tracking-wide text-sm">
-                  Project 4
-                </h3>
-                <img src="/coming soon.webp" alt="" />
-              </div>
-            </div>
-            <h2 className="mb-1">
-              Contact
-              <span className="ml-1 dark:text-sky-400 text-sky-700">Me</span>
-            </h2>
-            <div className="border border-gray-700 mb-3"></div>
-            <ContactForm />
+            </section>
+            <section id="contact">
+              <h2 className="mb-1">
+                Contact
+                <span className="ml-1 dark:text-sky-400 text-sky-700">Me</span>
+              </h2>
+              <div className="border border-gray-700 mb-3"></div>
+              <ContactForm />
+            </section>
           </div>
-        </section>
+        </div>
         {/* <ContactForm /> */}
       </div>
     </div>
