@@ -13,7 +13,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="flex flex-col gap-1 bg-gray-950 md:flex-row justify-center items-center min-h-screen py-1 ">
+    <div className="flex flex-col gap-1 pb-4 bg-gray-950 md:flex-row justify-center items-center min-h-screen py-1 ">
       <nav className="flex md:flex-col gap-1">
         <button
           onClick={() => setDarkMode(!darkMode)}
@@ -102,8 +102,8 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="dark:bg-gray-800 bg-gray-200 max-w-sm h-110  lg:max-w-md dark:text-gray-50 text-gray-800 p-3 rounded-lg">
-          <div className="scrollbar h-full overflow-y-auto p-2 ">
+        <div className="dark:bg-gray-800 bg-gray-200 max-w-sm lg:h-125  lg:max-w-md dark:text-gray-50 text-gray-800 p-3 rounded-lg">
+          <div className="scrollbar lg:h-full lg:overflow-y-auto p-2 ">
             <section id="about">
               <h1 className="mb-2">
                 Hey
