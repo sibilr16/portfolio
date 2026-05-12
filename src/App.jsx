@@ -87,8 +87,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="mt-8 flex justify-between items-center px-5 mb-2 border-2 border-x-0 border-b-0 border-t-gray-700">
-            <div className="flex cursor-pointer pt-2 gap-1">
+          <div className="mt-8 flex justify-between pt-2 items-center px-5 mb-2 border-2 border-x-0 border-b-0 border-t-gray-700">
+            <div className="flex cursor-pointer gap-1">
               <p className="text-sm">My Resume</p>
               <div>
                 <ion-icon name="document-outline"></ion-icon>
