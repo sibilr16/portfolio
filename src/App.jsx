@@ -13,7 +13,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="flex flex-col gap-1 bg-gray-950 md:flex-row justify-center items-center min-h-screen py-10 ">
+    <div className="flex flex-col gap-1 bg-gray-950 md:flex-row justify-center items-center min-h-screen py-1 ">
       <nav className="flex md:flex-col gap-1">
         <button
           onClick={() => setDarkMode(!darkMode)}
@@ -64,8 +64,8 @@ function App() {
         </div>
       </nav>
       <div className="flex flex-col gap-1 lg:flex-row">
-        <section className="dark:bg-slate-800 bg-slate-200 max-w-xs dark:text-gray-50 text-gray-800 rounded-xl">
-          <div className="max-w-xs p-1 ">
+        <section className="dark:bg-slate-800 bg-slate-200 max-w-sm dark:text-gray-50 text-gray-800 rounded-xl">
+          <div className=" p-1 ">
             <img className="rounded-xl" src="/Code by code.png" alt="" />
           </div>
           <div className="max-w-28 -mt-14 z-10 mx-auto border border-gray-950 rounded-lg">
@@ -102,7 +102,7 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="dark:bg-gray-800 bg-gray-200 max-w-xs h-110  lg:max-w-md dark:text-gray-50 text-gray-800 p-3 rounded-lg">
+        <div className="dark:bg-gray-800 bg-gray-200 max-w-sm h-110  lg:max-w-md dark:text-gray-50 text-gray-800 p-3 rounded-lg">
           <div className="scrollbar h-full overflow-y-auto p-2 ">
             <section id="about">
               <h1 className="mb-2">
