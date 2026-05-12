@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="flex flex-col gap-1 pb-4 bg-gray-950 md:flex-row justify-center items-center min-h-screen py-1 ">
-      <nav className="flex md:flex-col gap-1">
+      <nav className="flex md:flex-col gap-1 sticky top-1">
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="dark:bg-slate-800 bg-slate-200 cursor-pointer p-2 flex md:flex-col md:py-4 items-center justify-center  rounded-lg"
